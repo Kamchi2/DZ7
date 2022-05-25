@@ -1,11 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Hero[] heroes = new Hero[3];
-        heroes[0] = new Magic();
-        heroes[1] = new Medic();
-        heroes[2] = new Warrior();
-        for (int i = 0; i < heroes.length; i++) {
+        Hero heroes [] = {new Magic(), new Medic(), new Warrior()};{
+            for (int i = 0; i < heroes.length; i++) {
             heroes[i].applySuperAbility("Ability");
+            }
         }
     }
 }
